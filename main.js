@@ -40,13 +40,10 @@ let enToMorse = {
 };
 
 
-let translateFunction = () => {
-    for (const letter in enToMorse) {
-    return (`${letter}: ${enToMorse[letter]}`);
-    }
+let translateFunction = (letter) => {
+    const morseTranslation = enToMorse[letter];
+    console.log(morseTranslation);
 }
-
-
 
 
 // let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
