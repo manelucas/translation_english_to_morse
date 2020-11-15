@@ -1,3 +1,4 @@
+import englishToMorse from './data/data'
 
 
 const text = document.getElementsByTagName("input");
@@ -10,60 +11,9 @@ buttonEnToMorse.addEventListener("click", (e) => {
 })
 
 
-let enToMorse = {
-    A: ".-", 
-    B: "-...", 
-    C: "-.-.", 
-    D: "-..", 
-    E: ".", 
-    F: "..-.", 
-    G: "--.", 
-    H: "....", 
-    I: "..", 
-    J: ".---", 
-    K: "-.-", 
-    L: ".-..", 
-    M: "--", 
-    N: "-.", 
-    O: "---", 
-    P: ".--.", 
-    Q: "--.-", 
-    R: ".-.", 
-    S: "...", 
-    T: "-", 
-    U: "..-", 
-    V: "...-", 
-    W: ".--", 
-    X: "-..-", 
-    Y: "-.--", 
-    Z: "--..",
-};
 
 
 let translateFunction = (letter) => {
     const morseTranslation = enToMorse[letter];
     console.log(morseTranslation);
 }
-
-
-// let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-
-// const morse = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."];
-
-//  let example = "HELLO";
-// let scan = [];
-
-// let translateEnToMorse = () => {
-//     let scan = example.split("")
-//     for (let i = 0; i < alphabet.length; i++) {
-//         for (let j = 0; j < scan.length; j++ {
-
-//         }
-//         if (scan === alphabet[i]) {
-//             for (let j = 0; j < morse.length; j++ {
-                
-                
-//             }
-//         }
-        
-//     morse
