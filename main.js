@@ -1,19 +1,9 @@
 import englishToMorse from './data/data'
 
-
-const text = document.getElementsByTagName("input");
-const buttonEnToMorse = document.querySelector("#en-morse"); 
-const morseToEn = document.querySelector("#morse-en");
-let p = document.querySelector("p");
-
-buttonEnToMorse.addEventListener("click", (e) => {
-    p.innerHTML = "hello";
-})
+const input = document.querySelector("#input");
+const button = document.querySelector("#btn"); 
+const translation = document.querySelector("output");
 
 
 
 
-let translateFunction = (letter) => {
-    const morseTranslation = enToMorse[letter];
-    console.log(morseTranslation);
-}
