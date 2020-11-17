@@ -2,13 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(176, 245, 245);
+}
+
+body {
+    background-color: #355c7d;
+    letter-spacing: 0.2rem;
 }
 
 h1{
     width: 100%;
     margin: 50px auto;
     text-align: center;
+    color: white;
     height: 100px;
     font-size: 30px;
     letter-spacing: 0.2rem;
@@ -16,6 +21,7 @@ h1{
 
 main {
     display: flex;
+    color: white;
 
 }
 
@@ -26,17 +32,40 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
 }
 
 input {
-    padding: 5px;
+    padding: 10px;
     width: 200px;
     margin: 10px auto;
     background-color: white;
 }
 
 button {
-    padding: 5px;
+    padding: 10px;
     font-weight: 700;
-    width: 100px;
+    width: 200px;
+    background-color: rgb(1, 2, 61);
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+#output, #outputInEnglish {
+    background-color: white;
+    height: 150px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .enToMorse, .morseToEn{
+        width: 100%;
+        flex-direction: column;
+    }
 }
